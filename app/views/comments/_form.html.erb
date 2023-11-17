@@ -1,0 +1,22 @@
+<%= form_for [@post, comment] do |f| %>
+    <div class="field>
+    <p>
+        <%= f.label :name%>
+        <%= f.text_field :name%>
+    </p>
+    </div>
+
+    <div class="field>
+    <p>
+        <%= f.label :content, "Comment" %>
+        <%= f.text_area :content%>
+    </p>
+    </div>
+
+    <div class="actions">
+    <p>
+        <%= f.submit %>
+    </p>
+    </div>
+
+<% end %>
