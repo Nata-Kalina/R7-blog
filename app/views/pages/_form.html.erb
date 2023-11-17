@@ -1,0 +1,19 @@
+<%= form_for(page) do |f| %>
+    <div class="field">
+        <p><%= f.label :title %></p>
+        <%= f.text_field :title %>
+     </div>
+     <div class="field">
+        <p><%= f.label :body %></p>
+        <%= f.text_area :body %>
+     </div>
+     <div class="field">
+        <p><%= f.label :slug %></p>
+        <%= f.text_field :slug %>
+     </div>
+     <div>
+        <p><%= f.submit %></p>
+     </div>
+
+
+<% end %>
